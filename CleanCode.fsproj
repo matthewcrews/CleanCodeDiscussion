@@ -14,6 +14,7 @@
         <Compile Include="StructDU.fs"/>
         <Compile Include="CompactDU.fs"/>
         <Compile Include="SeparateShapes.fs"/>
+        <Compile Include="DUWithValues.fs"/>
         <Compile Include="Benchmarks.fs"/>
         <Compile Include="Program.fs"/>
     </ItemGroup>
