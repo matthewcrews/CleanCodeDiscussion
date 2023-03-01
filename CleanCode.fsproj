@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <Platform>x64</Platform>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Constants.fs"/>
+        <Compile Include="Inheritance.fs"/>
+        <Compile Include="Interface.fs"/>
+        <Compile Include="DU.fs"/>
+        <Compile Include="StructDU.fs"/>
+        <Compile Include="CompactDU.fs"/>
+        <Compile Include="SeparateShapes.fs"/>
+        <Compile Include="Benchmarks.fs"/>
+        <Compile Include="Program.fs"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="argu" Version="6.1.1"/>
+        <PackageReference Include="benchmarkdotnet" Version="0.13.5"/>
+        <PackageReference Include="benchmarkdotnet.diagnostics.windows" Version="0.13.5"/>
+    </ItemGroup>
+
+</Project>
