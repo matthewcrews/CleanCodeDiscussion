@@ -42,6 +42,14 @@ type Benchmarks () =
         acc
 
     [<Benchmark>]
+    member _.DUWithValues () =
+        let mutable acc = 0.0f
+        for shape in DUWithValues.shapes do
+            acc <- acc + (DUWithValues.Shape.area shape / (1.0f + DUWithValues.Shape.cornerCount shape))
+
+        acc
+
+    [<Benchmark>]
     member _.AltDULoop () =
 
         let circleCoef = Constants.pi / (1.0f + DU.Circle.cornerCount)
